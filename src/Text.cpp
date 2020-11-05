@@ -10,7 +10,7 @@ void Text::output(SDL_Renderer *renderer, const std::string &text,
 	if (!Sans) {
 		std::cerr << TTF_GetError() << std::endl;
 	}
-	SDL_Color Color = {r, g, b, 255};
+	const SDL_Color Color = {r, g, b, 255};
 	SDL_Surface *temp_surface = TTF_RenderText_Solid(Sans, text.c_str(), Color);
 	TTF_CloseFont(Sans);
 	if (!temp_surface) {
