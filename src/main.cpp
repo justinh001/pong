@@ -4,7 +4,7 @@
 
 int main() {
 	if (SDL_Init(SDL_INIT_VIDEO) == 0) {
-		Game game("Game Title", 960, 540);
+		Game game("Pong", 960, 540);
 		while (game.running) {
 			game.handle_events();
 			game.update();
